@@ -1,0 +1,177 @@
+#1
+Declaração de nova classe
+plubic class "Nome da classe" {
+
+  // Seu Código Aqui
+}
+
+O arquivo da classe deve ter no mesmo nome classe
+exemplo:
+Arquivo: App.java
+Nome da Classe será App
+ficará assim no código
+
+plubic class App {
+
+ //
+}
+
+Primeiro código feito na aula de anatomia 
+
+plubic class MinhaClasse {
+
+  plubic static void (String [] args) {
+
+    System.out.println("Olá Mundo!!");
+
+  }
+
+}
+//System e uma classe de sistema onde tem Input ou Output  dentro do sistema;
+//out e uma atrubuição da classe System que dará uma saída para algo;
+//println é a atrubuição da saída out que irar imprimir uma String;
+
+#2
+Os arquivos java tem um pradão de nomeclatura e é recomendado seguir algumas conveções de escrita como:
+Arquivo.java: Todo arquivo deve ter .java e começar com letra MAIÚSCULA. exemplo:
+Calculadora.java, ClaculadoraCientifica.java
+Nome de Variáveis: toda variável deve ser escrita com letra minúscula, porem se for composta, a primeira letra da segunda palavra deverá ser MAIÚSCULA, exemplo:
+ano e anoFabricacao.
+o nome da prática se chama "camelCase"
+
+## Existe uma regra adicionall para variáveis quando na mesma queremos identificar que ela não sofrerá alterações de valor exemplo:
+plubic static void (String [] args) {
+
+  final String BR = "Brasil";
+
+  }
+
+regras para nomeclatura
+. Deve conter apenas letras, _(underline), $ ou os números de 0 a 9
+. Deve obrigatoriamente se iniciar por uma letra (preferencialmente), _ ou $, jamais com números
+. Deve iniciar com uma letra minúscula (boa prática - ver abaixo)
+. Não pode conter espaços
+. Não podemos usar palavras-chave da linguagem
+. O nome deve ser único dentro de um escopo
+
+#3
+Declarando variáveis e métodos
+
+. Declarar um variável em Java segue sempre a seguinte estrutura;
+
+//Estrutura
+
+Tipo NomeBemDefinido = Atribuição (opcional em alguns casos)
+
+//Exemplo 
+
+int idade = 23;
+double altura = 1.62;
+Dog spike; //observe que aqui a variável spike não tem valor 
+...
+public class MinhaClasse {
+  
+public static void main (String [] args) {
+  //toda variável e contida com seu Tipo seu "Nome" e seu valor 
+    String meuNome = "Erick";
+  // também pode ser feita com números
+    int anoFabricacao = 2024;  
+  // as variáveis boolean pode tem seu valor escrito ou não
+    boolean verdadeira = false; 
+  // pode alterar o valor da variável assim
+  anoFabricacao = 2018; 
+ 
+}
+
+}
+
+. Declarando métodos em Java segue uma estrutura bem simples:
+
+//Estrutura
+
+TipoRetorno NomeObjetivoNoInfinitivo Parametro (s) //o parametro pode ser opcional ou não
+
+//Exemplo
+
+int somar (int numeroUM, int numero2) 
+
+Sting formatarCep (long cep)
+// perceba que nesse exemplo estamos passando um número inteiro  e retornando uma String
+
+public class MinhaClasse {
+  
+public static void main (String [] args) {
+
+  String primeiroNome = "Talita";
+  String segundoNome = "Borba";
+
+  String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+  System.out.println(nomeCompleto);
+}
+
+public static String nomeCompleto (String primeiroNome, String segundoNome) {
+  return "Resultado do método " +  primeiroNome.concat(" ").concat(segundoNome);
+}
+
+}
+
+#4
+Identação
+Basicamente indentar é um termo utilizado para escrever o código do programa de forma hierárquica, facilitando assim a visualização e o entendimento do programa.
+Exemplo código sem indentação
+public class BoletimEstudantil {
+  public static void main(String[] args) {
+    int mediaFinal = 6;
+    if(mediaFinal<6)
+    System.out.println("REPROVADO!!!!");
+    else if(mediaFinal==6)
+    System.out.println("PROVA MINERVA!!!");
+    else
+    System.out.println("APRVADO!!!");
+  }
+}
+Com indentação
+public class BoletimEstudantil {
+  public static void main(String[] args) {
+      int mediaFinal = 6;
+      if(mediaFinal<6)
+        System.out.println("REPROVADO!!!!");
+      else if(mediaFinal==6)
+        System.out.println("PROVA MINERVA!!!");
+      else
+        System.out.println("APRVADO!!!");
+  }
+}
+
+#5
+Organizando arquivos
+À medida que nosso sistema vai evoluindo, surgem novos arquivos(código fonte) em nossa estrutura de arquivos do projeto.
+ Isso exige que seja realizado uma organização destes arquivos de pacotes(packages).
+
+conversão de sub diretorios
+.comercial / com
+.orgazacional / org
+.opensource / open
+
+exemplo 
+empresa com nome: HyperTech
+
+o projeto comercial
+
+com.hypertech.notification.service
+
+#6
+Java Beans
+Umas das maiores dificuldades na programação é escrever algoritmos legíveis a níveis que sejam compreendidos por todo seu time ou por você mesmo no futuro. 
+Para isso a linguagem java sugere, através de convenções, formas de escrita universal para nossas classes, atributos, métodos pacotes
+
+Variáveis 
+Mais cedo já aprendemos algumas regras de declaração de variáveis, mas agora iremos conhecer algumas sugestões de nomeclatura
+.Uma variável deve ser clara, sem abreviações ou definição sem sentido;
+.Uma variável é sempre no singular, exceto quando se referir a um array ou coleção.
+defina um idioma único para suas variáveis. Se você for declarar variáveis em inglês, defina todas em inglês.
+
+Métodos
+Os métodos deverão ser nomeados como verbos, através de uma mistura de letras minúscula e maiúsculas. 
+Em princípio todas as letras que compõem o nome devem ser mantidas em minúscula, com exceção da primeira letra de cada palavra composta a partir da segunda palavra
+
