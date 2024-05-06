@@ -1,0 +1,43 @@
+#3 
+Tipos de Dados
+No Java, existem algumas palavras reservadas para a representação dos tipos de dados básicos que precisam ser manipulados para a construção de programas.
+Estes tipos de dados são conhecidos como tipos primitivos (Primitive Types)
+
+Os oitos tipos primitivos são
+int, byte, short, long, float, double, boolean e char 
+
+tipo          valor 
+byte       -128 a 127
+short      -32.768 a 32.767
+int        -2.147.483.648 a 2.147.483.647
+long       -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
+// os tipos primitivos podem ter partes fracionárias 
+float      -3,4028E + 38
+double     -1,7976E + 308
+
+Declaração de Variáveis
+Variável é uma identificação de um espaço em memória utilizado pelo nosso programa.
+Seguindo as convenções em linguagem de programação, toda variável é composta por: tipo de dados + identificação + valor atribuído.
+
+<Tipo> <nome Variavel> <atribuicaoDeValorOpcional>
+exemplo:
+
+int idade; //Tipo "int", nome "idade", com nenhum valor atribuído.
+int anoFabricacao = 2021; //tipo "int", nome "anoFabricacao", com valor atribuído "2021"
+double salarioMinimo = 2.500; // Tipo "double", nome "salarioMinimo", com valor atribuído "2.500"
+
+byte idade = 20;
+short ano = 2024;
+int cep = 556600000;
+long cpf = 12345689071L; // se começar com zero, talvez tenha que ser outro tipo
+float pi = 3.14F; // se começar com zero, talvez tenha que ser outro tipo
+double salario = 1242.70;
+
+#4
+Constantes
+As Constantes são valores armazenados em memória que não podem ser modificados depois de declarados. 
+Em Java, esses valores são representados pela palavra reservada final, seguida do tipo.
+
+Por convenção, Constantes são sempre escrita em CAIXA_ALTA.
+
+
