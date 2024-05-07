@@ -1,0 +1,57 @@
+#2
+Operadores
+Geralmente as primeiras palavras que ouvimos em um curso de programação são:
+um programa é um conjunto de instruções lógicas que, quando executadas, produzem algum resultado. Com isso em mente, ao começar a criar as primeiras linhas de código,
+logo você notará que é comum receber dados do usuário, prover alguma lógica para processá-los e então apresentar o resultado desse procedimento.
+
+Atribuição
+Representada pelo símbolo:  = .
+
+Aritméticos
+Os operadore são : + (adição), - (subtração), * (multiplicação),  / (divisão) e  % (modolu) .
+
+Operador de adição (+), quando utilizado em vairáveis do tipo texto, realizará a "concatenação de textos".
+
+#3
+Unários
+Esses operadores são aplicados juntamente com umoutro operador aritmético.Eles realizam alguns trabalhos básicos como incrementar,
+decrementar, inverter valores numéricos e booleanos.
+
+(+) Operador unário de valor positivo - números são positivos sem esse operador explicitamente;
+
+(-) Operador unário de valor negativo - nega um número ou expressão
+
+(++) Operador unário de incrementar de valor - incrementa o valor em 1 unidade
+
+(--) Operador unário de decremento de valor - decrementa o valor em 1 unidade
+
+(!) Operador unário lógico de negação - nega o valor de expressão booleana.
+
+#5
+Ternário
+O operador de condição ternária é uma forma resumida para definir uma condição e escolher por um dentre dois valores. 
+Você deve pensar numa condição ternária como se fosse condição IF normal, porém, de uma forma em que toda a sua estrutura estará escrita numa única linha.
+
+O operador ternário é  representado pelos símbolos ?: utilizados na seguinte estrutura de sintaxe:
+
+<Expressão Condicional> ? <Caso condição seja true> : <Caso condição seja false> 
+
+#6
+Relacionados
+Os operadores relacionais avaliam a relação entre duas vairáveis ou expressão. 
+Neste caso, mais precisamente, definem se o operando à esquerda é igual, diferente, menor, menor ou igual, maior ou maior igual ao da direita,  
+retornando um valor booleano como resultado
+
+== Quando desejamos verificar se uma variável  é IGUAL A  outra.
+!= Quando desejamos verificar se uma variável é DIFERENTE da outra.
+> Quando desejamos verificar se uma variável é MAIOR QUE a outra.
+>= Quando desejamos verificar se uma variável é MAIOR OU IGUAL a outra.
+< Quando desejamos verificar se uma variável é MENOR a outra.
+<= Quando desejamos verificar se uma variável é MENOR OU IGUAL a outra.
+
+#7
+Lógicos
+Os operadores lógicos representam o recursos que nos permite criar expressões lógicas maiores a partir da junção de duas ou mais expressões.
+
+&& Operador Lógico "E"
+|| Operador Lógico "OU"
