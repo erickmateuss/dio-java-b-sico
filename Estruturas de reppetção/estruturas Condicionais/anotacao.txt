@@ -1,0 +1,31 @@
+Tipos de Estruturas de Repetição
+
+.Estruturas condicionais: if-else, switch-case
+
+.Estruturas de repetição: for, while, do-while
+
+.Estruturas de exceções: try-catch-finally, throw
+
+#1
+Estruturas condicionais
+possibilita a escolha de um grupo de ações e comportamentos a serem executadas quando determinadas condições são ou não satisfeitas.
+A Estruturas pode ser Simples ou Composta.
+
+condicionais Simples
+Quando ocorre uma validação de execuções de fluxo somente quando a condição for positiva, 
+consideramos como uma estrutura Simples 
+
+condicionais Composta
+as vezes o nosso programa deverá seguir mais de uma jornada de execução condionado a uma regra de negócio, este cenário é demoniado 
+Estrutura Condicional Composta
+
+condicionais encadeadas
+Em um controle de fluxo condicional, nem sempre nos limitamos a se (if) e senão (else), podemos ter uma terceira, quarta e ou inúmeras condições
+
+Condição ternária
+Vimos em operadores, podenmos abreviar nosso algoritmico condicional refatorando com o conceito de operador ternário.
+
+Switch case
+A estrutura compara o valor de cada caso o da varíavel sequenciamente, e sempre que encontra um valor correspondente, executa o código associado ao caso.
+Para evitar que as comparações continuem a ser executados após um caso correspondente ter sido encontrado, acrescentamos o comando Break no final de cada  bloco de códigos.
+O comando Break, quando executado, encerra a execução da estrutura onde ele se encontra
