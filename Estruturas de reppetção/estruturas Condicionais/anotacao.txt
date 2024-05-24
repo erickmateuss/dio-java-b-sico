@@ -29,3 +29,29 @@ Switch case
 A estrutura compara o valor de cada caso o da varíavel sequenciamente, e sempre que encontra um valor correspondente, executa o código associado ao caso.
 Para evitar que as comparações continuem a ser executados após um caso correspondente ter sido encontrado, acrescentamos o comando Break no final de cada  bloco de códigos.
 O comando Break, quando executado, encerra a execução da estrutura onde ele se encontra
+
+
+Estruturas de Repetição
+
+.For (para)
+.While (enquanto)
+.Do While (faça enquanto)
+
+For 
+O comando for (na tradução literal para a língua portuguesa "para") permite que uma varíavel contadora seja e incrementada a cada iteração, 
+sendo essas informações definidas na chamanda do comando. O comando for recebe como entrada uma varíavel contadora, a condição e o valor de incrementarão
+
+For Each
+O uso do for / each está fortemente relacionado com um cenário onde contenham um array ou coleção, e assim, a interação é baseada aos elementos da coleção 
+
+break e continue
+Break significa quebrar, para, frear, interromper. E é isso que se faz quando o Java encontra esse comando pela frente. 
+Continue, como o nome diz, ele 'continua' o laço. O comendo break  interrompe o laço, já o continue interrompe somente a iteração atual.
+
+While
+O laço whilhe (na tradução literal para a língua portuguesa "enquanto") determinan que enquanto uma condição for valida, o bloco de código será executada. 
+O laço whilhe testa a condição antes de executar o código, logo, caso a condição seja inválida no primeiro teste o bloco nem será executado
+
+Do While
+O laço do / while (na tradução literal para a língua portuguesa "faça... enquanto"), assim como o laço while, considera que enquanto uma determinada condição for válida o bloco de código
+será executado. Entretanto, do / while testa a condição após executar o código, sendo assim, mesmo que a condição seja considerada inválida no primeiro teste o bloco será executado pelo menos uma vez.
