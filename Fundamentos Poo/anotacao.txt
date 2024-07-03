@@ -1,0 +1,156 @@
+#1
+Conceito de POO
+À medida que a tecnologia vem evoluindo, as linguagens de programação
+também, e é está transição natural que determina quando estamos nos referindo a linguagem de baixo e alto nível
+
+Baixo Nível:
+São linguagens que estão mais próxima da interpretação da máquina diante do
+algoritmo desenvolvido. Exemplo: Linguagem Assembly e C
+
+Alto Nível: 
+São linguagens que disponibilizam uma proposta de sintaxe (forma de escrever
+processos para serem executados pelos computador) mais próxima de interpretação
+humana. Exemplo: Java, JavaScript, Python e C++
+
+Programação estruturada
+É um paradigma de programação que visa melhorar a clareza, a qualidade e o tempo de desenvolvimento de um programa de computador,
+fazendo uso extensivo das contruções de fluxo de controle estruturado de seleção (if/ then/ else) e repetição (while e for), 
+estruturas de bloco e sub - rotinas.
+O que devemos ter me mente, é que na programação estruturada implementamos algoritmos com estruturas sequenciais denominados de procedimentos lineares,
+podendo afetar o valor variáveis de escopo local ou global em uma aplicação.
+
+POO
+é um paradigma de progrmaação baseado no conceito de "objetos", que podem conter dados na forma de campos, também conhecidos como atributos, e códigos, na forma de
+procedimentos, também conhecidos como métodos.
+O que precisamos entender, é que cada vez mais as linguagens se adequam ao cenário real, proporcionado assim que o programador desenvolva algoritmos mais próximo 
+de fluxo comportamentais, logo tudo ao nosso redor é representado como Objeto.
+
+#2
+Classes
+Identificador, Características e Comportamentos
+
+. Classe (class): A estrutura e ou representação que direciona a criação dos objetos de mesmo tipo.
+. Identificador (identity): Propósito existencial aos objetos que serão criados.
+. Características (states): Também conhecido como atributos ou propriedades, é toda informação que representa o estado do objeto.
+. Instanciar (new): É o ato de criar um objeto a partir de estrutura definida em uma classe.
+
+classificação de classe
+
+. Classe de modelo (model): classes que representem estrutura de domínio da aplicação, exemplo: Cliente, Pedido, Nota Fiscal e etc.
+. Classe de serviço (service): classes que contém regras de negócio e valdiação de nosso sistema.
+. Classe de repositório (repository): classes que contém uma integração com banco de dados.
+. Classe de controle (controller): classes que possuem a finalidade de disponibilizar alguma comunicação externa à nossa aplicação, tipo http web ou webservices.
+. Classe utilitária (util): classe que contém recursos comuns à toda nossa aplicação.
+
+#3
+Pacotes
+É composta por milhares de classes com as finalidades de, por exemplo: Classes de tipos de dados, representação de texto, números, datas, arquivos e diretórios, conexão 
+a banco de dados, entre outras. Imagina todas estas classes existirem em um único nível de documentos? E as classes desenvolvidads por nós, meors desenvolvedores de aplicação
+de vários os gêneros? Imagina como ficaria este diretório em?
+
+Para prevenir este acontecimento, a linguagem dispõe de um recurso que organiuza as classes padrão e criadas por nós, que conhecemos como pacote (package). Os pacotes são 
+subdiretórios a partir da pasta src do nosso projeto onde estão localizadas as classes da linguagem e novas que forem criadas para o projeot. Existem algumas convenções para criação
+de pacotes já utilizados no mercado.
+
+Nomeclatura
+Vamos imaginar que sua empresa se chama Power Soft e ela está desenvolvendo softwares comercial, governamental e um software livre ou de código aberto. Abaixo teríamos os pacotes sugeridos conforme tabela abaixo:
+
+.Comercial: com.powersoft
+.Governamental: gov.powersoft
+.Código aberto: or.powersoft
+
+Bem, acima já podemos perceber que existe uma definição para o uso do nome dos pacotes, porém podemos organizar ainda mais um pouco as nossas classes mediante a proposta de sua existência:
+
+.model
+.repository
+.service
+.controller
+.view
+.util
+
+Identificação
+Uma das características de uma classe é a sua identificação, Cliente, NotaFiscal, TítuloPagar, porém quando esta classe é organizada por pacotes, ela passa a ter duas identificações.
+O nome simples (próprio nome) e agora o nome qualificado (endereçamento do pacote + nome), exemplo: Considere a classe Usuario que está endereçada no pacote
+com.controle.acesso.model, o nome qualificado desta calsse É
+com.controle.acesso.model.Usuario
+
+Package versus Import
+A localização de uma classe é definida pela palavra reservada package, logo, uma classe só contém uma definição de package no arquivo, sempre na primeira linha do código. Para a utilização de uma 
+classe existentes em outros pacotes, necessitamos realizar a importação das mesmas, seguindo a recomendação abaixo:
+
+//
+package
+
+import ...
+import ...
+
+public class MinhaClasse {
+
+}
+//
+
+#4
+Visabilidade dos recursos
+
+Modificadores
+Utilizamos três palavras reservadas e um conceito default (sem nenhuma palavra reservada) para definir os quatro tipos de visibilidade de atributos, métodos e até mesmo classes no que se refere ao acesso
+por outras classes. Iremos ilustrar do mais visível ao mais restrito tipo de visibilidade nos arquivos em nosso projeto.
+
+Para uma melhor ilustração, iremos representar os conceitos de visibilidade de recursos através do contexto em uma lanchonete que vende lanche natural e suco.
+
+
+Modificador public
+Como o próprio nome representa, quando nossa classe, método e atributo é definido como public, qualquer outra classe em qualquer outro pacote pode visualizar tais recursos.
+
+Modificador default 
+O modificador default está fortemente associado a organização das classes por pacotes, algumas implementações não precisam estar disponíveis por todo projeto, e este modificador de acesso restringe a visabilidade por pacotes.
+
+Dentro do pacote lanchonete, iremos criar dois sub-pacotes para representar a divisão do estabelecimento.
+.lanchonete.atendimento.cozinha:contém parte cozinha e atendimentos.
+.lanchonete.area.cliente: contém classes relacionadas a espaço do cliente.
+
+
+Modificador private
+Depois de reestruturar nosso estabelecimento (projeto), onde, termos as divisões (pacotes) espaço do cliente e atendimento, chegou a hora de uma reflexão sobre visibilidade ou modificadores de acesso.
+Conhecemos as ações disponíveis nas classes Cozinheiro, Almoxarife, Atendimento e Cliente, mesmo com a organização da visibilidae por pacote, será se realmente estas classes precisam ser tão explicitas?
+
+. Será se o Cozinheiro precisa saber que∖como o Almoxarife controle as entradas e saídas?
+. Que o Cliente precisa saber como o Atendente recebe o pedido para servir sua mesa?
+. Que o Atendente precisa saber que antes de pagar o Cliente consulta o saldo no App?
+
+
+#5
+Getters e Setters
+
+Os métodos são utilizados para buscar valores de atributo ou defenir novos valores de atributos de instâncias de classes.
+O método Getter retorna o valor do atributo especificado.
+O método Setter define outro novo valor para o atributo especificado.
+
+.Os atributos precisam ter o modificador de acesso private. Ex:private String nome;
+.Como agora os atributos estarão somente a nível de classe, precisaremos dos métodos getX e setX, Ex: getNome() e setNome(String novoNome) {};
+.O método set é responsável por definir ou modificador o valor de um atributo em um objeto, logo ele também precisa ser public, receber um parâmetro do mesmo tipo de variável mas não retorna nenhum valor void. Ex: public void setNome (String  newNome) ;
+
+#6
+Contrutores
+Sabemos que para criar um objeto na linguagem utilizamos a seguinte estrutura:
+// Classe novoObjeto = new Classe(); //
+
+Desta forma será criado um novo objeto na memória, este recurso também pe conhecido como instaciar um novo objeto.
+Muitas das vezes já queremos que na ciração (instanciação) de um objeto, a linguagem já solicite para quem for criar este novo objeto defina algumas propriedades essenciais. Abaixo iremos ilustrar uma classe Pessoa onde a mesma terá os atributos: Nome, CPF, Endereço.
+
+
+#7
+Enums
+
+É um tipo especial de classe onde os objetos são previamente criados, imutáveis e disponíveis por toda aplicação.
+Usamos Enum quando o nosso modelo de negócio contém objetos de mesmo contexto que já existem de pré-estabelecida com a certeza de não haver tanta alteração de valores.
+
+Exemplos:
+Grau de Escolaridade: Analfabeto, Fundamental, Médio, Superior
+Estado Civil: Solteiro, Casado, Divorciado, Viúvo
+Estados Brasileiros: São Paulo, Rio de Janeiro, Piauí, Maranhão.
+
+Enquanto que uma constante é uma variável de tipo com valor imutável, um enum é um conjunto de objeots já pre-definidos na aplicação.
+Como um enum é um conjunto de objeots, logo, estes objetos podem conter atributos e métodos. Veja o exemplo de um enum para disponibilizar os outros estados brasileiros citados acima, 
+cotendo informações de: Nome, Sigla e um método que pega o nome do de cada estado e já retorna para tudo maiúsculo.
+ 
