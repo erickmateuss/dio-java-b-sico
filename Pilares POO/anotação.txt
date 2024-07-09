@@ -30,3 +30,12 @@ com uma pessoa através de conversas instantâneas pela internet. Ao longo dos a
 
 Encapsulamento já imaginou você instalar o MSN Messenger e ao querer enviar uma mensagem, te fosse solicitado verificar se o computador está conectado a internet e depois, pedir para você salvar a mensagem no histórico?
 Ou, se ao tentar enviar um SMS pelo celular, primeiro você precisasse consultar manualmente o seu saldo?
+
+Herança já imaginou você ter sido classificado para vaga de emprego de seus sonhos e como desafio, justamente você criar um diagrama de classes e em seguida os respectivos arquivos .java que apresentasse os fundamentos de POO
+com base no contexto de vários aplicativos de mensagens instantâneas? Sorte sua que você está nos acompanhando em nossa jornada
+
+
+Abstração Sabemos que qualquer sistema de mensagens instantâneas se realiza as mesmas operações de Enviar e Receber Mensagem, dentre outras operações comuns ou exclusivas de cada aplicativo no mercado.
+
+Polimorfismo Podemos  observar no contexto de Abstração e Herança que conseguimos criar uma singularidade estrutural de nossos elementos. Isso quer dizer que qualquer classe que deseja representar um serviço de mensagem,
+basta estender a classe ServicoMensagemInstantanea e implementar os respectivos métodos abstratos. O que vale reforça aqui é, cada classe terá a mesma ação executando procedimentos de maneira especializada.
