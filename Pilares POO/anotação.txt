@@ -39,3 +39,7 @@ Abstração Sabemos que qualquer sistema de mensagens instantâneas se realiza a
 
 Polimorfismo Podemos  observar no contexto de Abstração e Herança que conseguimos criar uma singularidade estrutural de nossos elementos. Isso quer dizer que qualquer classe que deseja representar um serviço de mensagem,
 basta estender a classe ServicoMensagemInstantanea e implementar os respectivos métodos abstratos. O que vale reforça aqui é, cada classe terá a mesma ação executando procedimentos de maneira especializada.
+
+
+Inteface 
+Herança é um pilar do POO algo que deve ser esclarecido e que a linguagem Java não permite que conhecemos como Herança Mútipla.
